@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: #386ab1;
+  color: white;
+  font-weight: bold;
+}
+header nav .icon {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin: 0px 15px;
+  width: 20%;
+}
+header nav .icon img {
+  width: 20%;
+}
+header nav .list_items {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+}
+header nav .list_items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.reservation_form {
+  background-image: url("../images/greece.jpeg");
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.reservation_form form {
+  background-color: #0F213F;
+  width: 70%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.reservation_form form .reservations,
+.reservation_form form .directions {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reservation_form form .reservations ul,
+.reservation_form form .directions ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.reservation_form form .reservations ul li,
+.reservation_form form .directions ul li {
+  color: white;
+  font-size: 24px;
+  margin: 5px 15px;
+  padding: 5px 15px;
+}
+.reservation_form form .reservations ul li:hover,
+.reservation_form form .directions ul li:hover {
+  background-color: #3B486A;
+}
+.reservation_form form .inputs {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 20px;
+}
+.reservation_form form .inputs input,
+.reservation_form form .inputs button {
+  height: 50px;
+  background-color: #3B486A;
+  margin: 0px 10px;
+  color: white;
+  padding: 0px 5px;
+  width: 10%;
+  font-size: 15px;
+  border: none;
+}
+.reservation_form form .inputs button {
+  background-color: #c2002d;
+  color: white;
+  cursor: pointer;
+}
+
+.section1 {
+  height: 350px;
+}
+.section1 .heading {
+  text-align: center;
+  border-bottom: 1px solid;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  box-shadow: 5px 5px 8px #696969;
+}
+.section1 .destinations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid;
+  height: 350px;
+}
+.section1 .destinations .destination_item {
+  height: 300px;
+  width: 20%;
+  margin: 5px 25px;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .destinations .destination_item img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+}
+.section1 .destinations .destination_item .destination_info {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 55px;
+  color: white;
+}
+
+.section2 {
+  height: 480px;
+}
+.section2 .heading {
+  text-align: center;
+  border-bottom: 1px solid;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  box-shadow: 5px 5px 8px #696969;
+}
+.section2 .premium {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.section2 .premium .box {
+  height: 450px;
+  width: 18%;
+  border: 1px solid black;
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+.section2 .premium .box .box_heading {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #386ab1;
+  margin-bottom: 20px;
+}
+.section2 .premium .box img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.section2 .premium .box .description {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section2 .premium .box .price {
+  color: #386ab1;
+}
+.section2 .premium .box a {
+  color: #386ab1;
+  margin-bottom: 15px;
+}
+.section2 .premium .box button {
+  border: none;
+  background-color: #386ab1;
+  color: white;
+  width: 70%;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

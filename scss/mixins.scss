@@ -1,0 +1,33 @@
+@import "vars";
+
+@mixin base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $roboto;
+  }
+}
+
+@mixin heading {
+  text-align: center;
+  border-bottom: 1px solid;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  box-shadow: 5px 5px 8px #696969;
+  @content;
+}
+
+@mixin srednji_ekran {
+  @media screen and (max-width: 1080px) {
+    @content
+  }
+}
+
+@mixin mali_ekran {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}

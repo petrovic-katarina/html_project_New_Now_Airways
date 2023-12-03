@@ -1,0 +1,219 @@
+@import "vars";
+@import "mixins";
+
+@include base;
+
+header {
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: $blue;
+    color: white;
+    font-weight: bold;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      margin: 0px 15px;
+      width: 20%;
+
+      img {
+        width: 20%;
+      }
+    }
+
+    .list_items {
+      width: 70%;
+      display: flex;
+      justify-content: flex-start;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.reservation_form {
+  background-image: url("../images/greece.jpeg");
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  form {
+    background-color: $form;
+    width: 70%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+
+    .reservations,
+    .directions {
+      display: flex;
+      flex-wrap: wrap;
+
+      // height: 70px;
+      // width: 60%;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        cursor: pointer;
+
+        li {
+          // height: 65px;
+          color: white;
+          font-size: 24px;
+          margin: 5px 15px;
+          padding: 5px 15px;
+
+          &:hover {
+            background-color: $buttons;
+          }
+        }
+      }
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: center;
+      color: white;
+      margin-top: 20px;
+
+      input,
+      button {
+        height: 50px;
+        background-color: $buttons;
+        margin: 0px 10px;
+        color: white;
+        padding: 0px 5px;
+        width: 10%;
+        font-size: 15px;
+        border: none;
+      }
+
+      button {
+        background-color: $red;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.section1 {
+  height: 350px;
+
+  .heading {
+    @include heading;
+  }
+
+  .destinations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid;
+    height: 350px;
+
+
+    .destination_item {
+      height: 300px;
+      width: 20%;
+      margin: 5px 25px;
+      border: 1px solid blue;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        position: relative;
+        // bottom: 75px
+      }
+
+      .destination_info {
+        position: absolute;
+        font-size: 20px;
+        font-weight: bold;
+        bottom: 55px;
+        color: white;
+      }
+    }
+  }
+}
+
+.section2 {
+  height: 480px;
+
+  .heading {
+    @include heading;
+  }
+
+  .premium {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .box {
+      height: 450px;
+      width: 18%;
+      border: 1px solid black;
+      margin: 15px 0px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+
+      .box_heading {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $blue;
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 150px;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        color: $blue;
+      }
+
+      a {
+        color: $blue;
+        margin-bottom: 15px;
+      }
+
+      button {
+        border: none;
+        background-color: $blue;
+        color: white;
+        width: 70%;
+        height: 40px;
+      }
+    }
+  }
+}
