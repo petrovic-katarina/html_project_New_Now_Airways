@@ -129,12 +129,14 @@ header nav .list_items ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.5s ease;
 }
 .section1 .destinations .destination_item img {
   height: 100%;
   width: 100%;
   border-radius: 15px;
   position: relative;
+  transition: opacity 0.5s ease;
 }
 .section1 .destinations .destination_item .destination_info {
   position: absolute;
@@ -142,6 +144,14 @@ header nav .list_items ul {
   font-weight: bold;
   bottom: 55px;
   color: white;
+  transition: color 0.5s ease, opacity 0.5s ease;
+}
+.section1 .destinations .destination_item:hover img {
+  opacity: 0.7;
+}
+.section1 .destinations .destination_item:hover .destination_info {
+  color: black;
+  opacity: 1;
 }
 
 .section2 {
@@ -199,6 +209,24 @@ header nav .list_items ul {
   color: white;
   width: 70%;
   height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.section2 .premium .box button:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1080px) {
+  .reservation_form form {
+    width: 90%;
+  }
+  .reservations {
+    border-bottom: 1px solid red;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
