@@ -119,9 +119,8 @@ header {
 
   .destinations {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 350px;
 
     .destination_item {
@@ -246,7 +245,7 @@ header {
   }
 
   .section1 {
-    height: 700px;
+    height: 750px;
 
     .destinations {
       height: 700px;
@@ -260,6 +259,10 @@ header {
           &:nth-child(4) {
             bottom: -300px;
           }
+        }
+
+        .lower {
+          bottom: -300px;
         }
       }
     }
@@ -275,8 +278,12 @@ header {
 }
 
 @include small_screen {
-  nav {
+  header nav {
     flex-direction: column;
+
+    .list_items {
+      width: 100%;
+    }
 
     ul {
       flex-direction: column;
@@ -334,6 +341,14 @@ header {
   .section1 .destinations .destination_item {
     width: 40%;
     margin: 5px;
+
+    .lower {
+      bottom: -520px;
+    }
+
+    .upper {
+      bottom: -170px;
+    }
   }
 
   .section2 {

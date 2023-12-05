@@ -117,9 +117,8 @@ header nav .list_items ul {
 }
 .section1 .destinations {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 350px;
 }
 .section1 .destinations .destination_item {
@@ -228,7 +227,7 @@ header nav .list_items ul {
     border-bottom: 1px solid red;
   }
   .section1 {
-    height: 700px;
+    height: 750px;
   }
   .section1 .destinations {
     height: 700px;
@@ -239,6 +238,9 @@ header nav .list_items ul {
   .section1 .destinations .destination_item .destination_info:nth-child(3), .section1 .destinations .destination_item .destination_info:nth-child(4) {
     bottom: -300px;
   }
+  .section1 .destinations .destination_item .lower {
+    bottom: -300px;
+  }
   .section2 {
     height: 1000px;
   }
@@ -247,15 +249,18 @@ header nav .list_items ul {
   }
 }
 @media screen and (max-width: 768px) {
-  nav {
+  header nav {
     flex-direction: column;
   }
-  nav ul {
+  header nav .list_items {
+    width: 100%;
+  }
+  header nav ul {
     flex-direction: column;
     display: none;
     width: 100%;
   }
-  nav ul li {
+  header nav ul li {
     display: none;
   }
   nav:hover li {
@@ -294,6 +299,12 @@ header nav .list_items ul {
   .section1 .destinations .destination_item {
     width: 40%;
     margin: 5px;
+  }
+  .section1 .destinations .destination_item .lower {
+    bottom: -520px;
+  }
+  .section1 .destinations .destination_item .upper {
+    bottom: -170px;
   }
   .section2 {
     height: 2500px;
